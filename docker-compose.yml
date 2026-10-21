@@ -12,13 +12,6 @@ services:
     container_name: moshtariat-tools-web
     restart: unless-stopped
     init: true
-    read_only: true
-    tmpfs:
-      - /run
-      - /tmp
-      - /var/tmp
-      - /var/lib/nginx
-      - /var/cache/nginx
     networks:
       edge:
         # DNS alias the edge proxy resolves; this name is ours to choose.

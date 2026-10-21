@@ -1,0 +1,31 @@
+# Deployment for moshtariat-tools.
+#
+# The container joins the existing edge-proxy network that fronts
+# moshtariat.ir; that network's name is deployment-specific, so it comes from
+# .env (see .env.example — never commit the real value). The public route that
+# forwards moshtariat.ir/tools to this container is in deploy/proxy-route.conf.
+name: moshtariat-tools
+
+services:
+  web:
+    image: moshtariat-tools:${TOOLS_TAG:-local}
+    container_name: moshtariat-tools-web
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs:
+      - /run
+      - /tmp
+      - /var/tmp
+      - /var/lib/nginx/tmp
+      - /var/cache/nginx
+    networks:
+      edge:
+        # DNS alias the edge proxy resolves; this name is ours to choose.
+        aliases:
+          - tools-web
+
+networks:
+  edge:
+    external: true
+    name: ${TOOLS_EDGE_NETWORK:?set TOOLS_EDGE_NETWORK in .env}

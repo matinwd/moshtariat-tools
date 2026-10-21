@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>محاسبه درصد تخفیف و قیمت بعد از تخفیف آنلاین — مشتریات</title>
+<meta name="description" content="ماشین‌حساب تخفیف: قیمت بعد از تخفیف، درصد تخفیف از روی دو قیمت، یا قیمت قبل از تخفیف را در یک کلیک حساب کنید. همراه با تخفیف پلکانی (چند تخفیف پشت سر هم).">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://moshtariat.ir/tools/discount">
+<meta name="theme-color" content="#4F46E5">
+<link rel="icon" href="/tools/assets/0e0400c5cf/img/moshtariat-icon.png">
+<link rel="apple-touch-icon" href="/tools/assets/0e0400c5cf/img/apple-touch-icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="مشتریات">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:title" content="محاسبه درصد تخفیف و قیمت بعد از تخفیف آنلاین — مشتریات">
+<meta property="og:description" content="ماشین‌حساب تخفیف: قیمت بعد از تخفیف، درصد تخفیف از روی دو قیمت، یا قیمت قبل از تخفیف را در یک کلیک حساب کنید. همراه با تخفیف پلکانی (چند تخفیف پشت سر هم).">
+<meta property="og:url" content="https://moshtariat.ir/tools/discount">
+<meta property="og:image" content="https://moshtariat.ir/tools/assets/0e0400c5cf/img/moshtariat-icon.png">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="/tools/assets/0e0400c5cf/fonts/Vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/tools/assets/0e0400c5cf/tools.css">
+<script src="/tools/assets/0e0400c5cf/clarity.js" defer></script>
+<script type="module" src="/tools/assets/0e0400c5cf/client/discount.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"خانه","item":"https://moshtariat.ir/"},{"@type":"ListItem","position":2,"name":"ابزارهای فروش","item":"https://moshtariat.ir/tools/"},{"@type":"ListItem","position":3,"name":"محاسبه درصد تخفیف"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"محاسبه درصد تخفیف","description":"ماشین‌حساب تخفیف: قیمت بعد از تخفیف، درصد تخفیف از روی دو قیمت، یا قیمت قبل از تخفیف را در یک کلیک حساب کنید. همراه با تخفیف پلکانی (چند تخفیف پشت سر هم).","url":"https://moshtariat.ir/tools/discount","applicationCategory":"BusinessApplication","operatingSystem":"Web","inLanguage":"fa-IR","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"IRR"},"publisher":{"@type":"Organization","name":"سی ار ام مشتریات","alternateName":["مشتریات","Moshtariat CRM"],"url":"https://moshtariat.ir","logo":"https://moshtariat.ir/tools/assets/0e0400c5cf/img/moshtariat-icon.png"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"درصد تخفیف را چطور حساب کنم؟","acceptedAnswer":{"@type":"Answer","text":"تفاوت قیمت اصلی و قیمت بعد از تخفیف را بر قیمت اصلی تقسیم و در ۱۰۰ ضرب کنید. مثلاً از ۲٬۴۰۰٬۰۰۰ به ۲٬۰۰۰٬۰۰۰ تومان یعنی ۴۰۰٬۰۰۰ ÷ ۲٬۴۰۰٬۰۰۰ × ۱۰۰ ≈ ۱۶٫۶۷٪."}},{"@type":"Question","name":"قیمت بعد از تخفیف چطور حساب می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"قیمت اصلی را در (۱۰۰ منهای درصد تخفیف) ضرب و بر ۱۰۰ تقسیم کنید. ۱۵٪ تخفیف روی ۲٬۴۰۰٬۰۰۰ تومان می‌شود ۲٬۰۴۰٬۰۰۰ تومان."}},{"@type":"Question","name":"از روی قیمت تخفیف‌خورده، قیمت اولیه را چطور پیدا کنم؟","acceptedAnswer":{"@type":"Answer","text":"قیمت بعد از تخفیف را بر (۱ − درصد ÷ ۱۰۰) تقسیم کنید. اشتباه رایج این است که همان درصد را دوباره به قیمت اضافه کنند که عدد کمتری از قیمت واقعی می‌دهد."}},{"@type":"Question","name":"دو تخفیف پشت سر هم چند درصد می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"ضریب‌ها در هم ضرب می‌شوند: (۱ − ۰٫۱) × (۱ − ۰٫۰۵) = ۰٫۸۵۵؛ یعنی مجموعاً ۱۴٫۵٪، نه ۱۵٪. در این ابزار درصدها را با + بنویسید."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">پرش به محتوا</a>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="/"><img src="/tools/assets/0e0400c5cf/img/moshtariat-mark.svg" alt="" width="44" height="23">مشتریات<small>ابزارهای فروش</small></a>
+    <nav class="nav" aria-label="ناوبری اصلی">
+      <a href="/tools/" aria-current="page">ابزارهای فروش</a><a href="/product">نرم‌افزار CRM</a><a href="/features">امکانات</a><a href="/pricing">تعرفه</a><a href="/blog">وبلاگ</a>
+    </nav>
+    <div class="hdr-act">
+      <a class="btn btn-ghost btn-sm" href="https://app.moshtariat.ir/?controller=LoginV2Controller&action=request&plugin=OtpLogin" rel="nofollow">ورود</a>
+      <a class="btn btn-primary btn-sm" href="https://app.moshtariat.ir/?controller=TrialSignupController&action=start&plugin=Subscription" rel="nofollow" data-track="trial-header">استفاده رایگان از CRM</a>
+    </div>
+  </div>
+  <nav class="subnav wrap" aria-label="ابزارها"><a href="/tools/">همهٔ ابزارها</a><a href="/tools/ras-cheque">محاسبه رأس چک</a><a href="/tools/proforma-invoice">پیش‌فاکتور آنلاین</a><a href="/tools/installment">محاسبه فروش اقساطی</a><a href="/tools/discount" aria-current="page">محاسبه درصد تخفیف</a><a href="/tools/vat">محاسبه ارزش افزوده</a><a href="/tools/markup-margin">قیمت تمام‌شده و درصد سود</a><a href="/tools/break-even">محاسبه نقطه سر به سر</a></nav>
+</header>
+<main id="main" class="wrap">
+<nav class="crumbs" aria-label="مسیر"><a href="/">خانه</a><span aria-hidden="true">/</span><a href="/tools/">ابزارهای فروش</a><span aria-hidden="true">/</span><span aria-current="page">محاسبه درصد تخفیف</span></nav>
+<header class="page-head">
+  <h1>محاسبه درصد تخفیف</h1>
+  <p class="lede">یکی از سه حالت را انتخاب کنید و دو عدد را بدهید؛ عدد سوم و مبلغ صرفه‌جویی همان لحظه نمایش داده می‌شود.</p>
+  <div class="badges"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11L4 12"/></svg>رایگان و بدون ثبت‌نام</span><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11L4 12"/></svg>نتیجه هم‌زمان با تایپ</span><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11L4 12"/></svg>لینک قابل ارسال</span></div>
+</header>
+<div class="tool" id="tool">
+  <section class="card" aria-labelledby="in-h">
+    <div class="card-head"><h2 id="in-h">چه چیزی را می‌خواهید؟</h2><div class="seg seg-sm" role="group" aria-label="واحد پول" data-unit-switch><button type="button" data-value="toman" aria-pressed="true">تومان</button><button type="button" data-value="rial" aria-pressed="false">ریال</button></div></div>
+    <div class="seg " role="group" data-seg="mode"><button type="button" data-value="final" aria-pressed="true">قیمت بعد از تخفیف</button><button type="button" data-value="percent" aria-pressed="false">درصد تخفیف</button><button type="button" data-value="original" aria-pressed="false">قیمت قبل از تخفیف</button></div>
+    <div class="fields">
+      <div data-show="final percent"><div class="field">
+  <label for="price">قیمت اصلی (قبل از تخفیف)</label>
+  <div class="inp"><input id="price" name="price" class="num" inputmode="decimal" autocomplete="off" value="" placeholder="" ><span class="unit" data-unit>تومان</span></div>
+  <div class="words" aria-live="polite"></div>
+</div></div>
+      <div data-show="final original"><div class="field">
+  <label for="percent">درصد تخفیف</label>
+  <div class="inp"><input id="percent" name="percent" class="ltr" inputmode="text" autocomplete="off" value="" placeholder="" ><span class="unit">٪</span></div>
+  <div class="hint">برای تخفیف پلکانی چند درصد را با + جدا کنید؛ مثل 10+5</div>
+</div></div>
+      <div data-show="percent original"><div class="field">
+  <label for="final">قیمت بعد از تخفیف</label>
+  <div class="inp"><input id="final" name="final" class="num" inputmode="decimal" autocomplete="off" value="" placeholder="" ><span class="unit" data-unit>تومان</span></div>
+  <div class="words" aria-live="polite"></div>
+</div></div>
+    </div>
+    <p class="privacy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><span>محاسبه کاملاً در مرورگر شما انجام می‌شود؛ هیچ عددی برای ما ارسال یا ذخیره نمی‌شود. لینک اشتراک‌گذاری فقط همین عددها را در خود دارد.</span></p>
+  </section>
+  <section class="card result tool-result" aria-live="polite">
+    <div id="out"><p class="empty">عددها را وارد کنید.</p></div>
+    <div class="share no-print">
+  <button type="button" class="btn btn-soft btn-sm" data-action="copy-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>لینک این محاسبه</button>
+  <button type="button" class="btn btn-ghost btn-sm" data-action="copy-result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="13" height="13" x="9" y="9" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>کپی نتیجه</button>
+  <button type="button" class="btn btn-ghost btn-sm" data-action="whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.3 7.9L3 21l1.2-4.6A9 9 0 1 1 21 12z"/><path d="M8.5 9.5c0 4 3 6.5 6 6.5.8 0 1.5-.7 1.2-1.4l-.6-1.2-1.6.5-1.9-2 .6-1.5-1.1-.7c-.7-.4-1.6.1-1.6 1z"/></svg>واتساپ</button>
+  
+</div>
+  </section>
+</div>
+<section class="section prose" aria-labelledby="how-h">
+  <h2 id="how-h">فرمول محاسبه تخفیف</h2>
+  <div class="formula">قیمت بعد از تخفیف = قیمت اصلی × (۱ − درصد تخفیف ÷ ۱۰۰)</div>
+  <div class="formula">درصد تخفیف = (قیمت اصلی − قیمت بعد از تخفیف) ÷ قیمت اصلی × ۱۰۰</div>
+  <div class="formula">قیمت قبل از تخفیف = قیمت بعد از تخفیف ÷ (۱ − درصد تخفیف ÷ ۱۰۰)</div>
+  <div class="example">
+    <strong>مثال‌ها:</strong>
+    ۱۵٪ تخفیف روی ۲٬۴۰۰٬۰۰۰ تومان یعنی ۳۶۰٬۰۰۰ تومان کمتر و قیمت نهایی ۲٬۰۴۰٬۰۰۰ تومان.
+    اگر همین کالا را ۲٬۰۰۰٬۰۰۰ تومان بفروشید، ۱۶٫۶۷٪ تخفیف داده‌اید.
+    و اگر بعد از ۱۵٪ تخفیف قیمت ۱٬۷۰۰٬۰۰۰ تومان شده، قیمت اصلی ۲٬۰۰۰٬۰۰۰ تومان بوده است.
+  </div>
+  <h3>تخفیف پلکانی جمع نمی‌شود</h3>
+  <p>۱۰٪ تخفیف و بعد ۵٪ تخفیف دیگر، برابر ۱۵٪ نیست؛ تخفیف دوم روی قیمتِ تخفیف‌خورده اعمال می‌شود و مجموع واقعی ۱۴٫۵٪ است. در خانهٔ درصد بنویسید <span class="lat">10+5</span> تا ابزار همین را حساب کند.</p>
+  <h3>تخفیف دادن یا برنگرداندن مشتری؟</h3>
+  <p>هر درصد تخفیف مستقیم از سود کم می‌شود، نه از قیمت. اگر حاشیهٔ سودتان ۲۰٪ باشد، ۱۰٪ تخفیف نصف سود آن فروش را می‌برد. پیش از تخفیف دادن، با <a href="/tools/markup-margin">محاسبهٔ حاشیه سود</a> ببینید چقدر جا دارید.</p>
+</section>
+<section class="section prose faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">پرسش‌های رایج</h2>
+  <details><summary>درصد تخفیف را چطور حساب کنم؟</summary><p>تفاوت قیمت اصلی و قیمت بعد از تخفیف را بر قیمت اصلی تقسیم و در ۱۰۰ ضرب کنید. مثلاً از ۲٬۴۰۰٬۰۰۰ به ۲٬۰۰۰٬۰۰۰ تومان یعنی ۴۰۰٬۰۰۰ ÷ ۲٬۴۰۰٬۰۰۰ × ۱۰۰ ≈ ۱۶٫۶۷٪.</p></details>
+  <details><summary>قیمت بعد از تخفیف چطور حساب می‌شود؟</summary><p>قیمت اصلی را در (۱۰۰ منهای درصد تخفیف) ضرب و بر ۱۰۰ تقسیم کنید. ۱۵٪ تخفیف روی ۲٬۴۰۰٬۰۰۰ تومان می‌شود ۲٬۰۴۰٬۰۰۰ تومان.</p></details>
+  <details><summary>از روی قیمت تخفیف‌خورده، قیمت اولیه را چطور پیدا کنم؟</summary><p>قیمت بعد از تخفیف را بر (۱ − درصد ÷ ۱۰۰) تقسیم کنید. اشتباه رایج این است که همان درصد را دوباره به قیمت اضافه کنند که عدد کمتری از قیمت واقعی می‌دهد.</p></details>
+  <details><summary>دو تخفیف پشت سر هم چند درصد می‌شود؟</summary><p>ضریب‌ها در هم ضرب می‌شوند: (۱ − ۰٫۱) × (۱ − ۰٫۰۵) = ۰٫۸۵۵؛ یعنی مجموعاً ۱۴٫۵٪، نه ۱۵٪. در این ابزار درصدها را با + بنویسید.</p></details>
+</section>
+<section class="section">
+  <div class="cta">
+    <div><h2>تخفیف را برای بستن معامله می‌دهید؛ معامله را کجا دنبال می‌کنید؟</h2><p>در مشتریات هر لید مسئول مشخص دارد، مرحلهٔ معامله روی برد پایپ‌لاین معلوم است و دلیل از دست رفتن فروش ثبت می‌شود.</p></div>
+    <div class="btn-row"><a class="btn btn-primary btn-lg" href="https://app.moshtariat.ir/?controller=TrialSignupController&action=start&plugin=Subscription" rel="nofollow" data-track="trial-cta">استفادهٔ رایگان از مشتریات</a><a class="btn btn-ghost btn-lg" href="/demo">دیدن دمو</a></div>
+  </div>
+</section>
+<section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h" class="group-title">ابزارها و مطالب مرتبط</h2>
+  <div class="related">
+    <a href="/tools/markup-margin">قیمت تمام‌شده و درصد سود<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a>
+    <a href="/tools/vat">محاسبه ارزش افزوده<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a>
+    <a href="/tools/proforma-invoice">پیش‌فاکتور آنلاین<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a>
+    <a href="/post-handling-price-objections">پاسخ به اعتراض «گرونه» در فروش<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a>
+    <a href="/post-crm-pricing-and-tco-guide">قیمت نرم‌افزار CRM و هزینهٔ کل مالکیت<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a>
+  </div>
+</section>
+</main>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a class="brand" href="/"><img src="/tools/assets/0e0400c5cf/img/moshtariat-mark-white.svg" alt="" width="44" height="23">مشتریات</a>
+        <p>ابزارهای رایگان مشتریات برای حساب‌وکتاب‌های روزمرهٔ فروش. همهٔ محاسبه‌ها در مرورگر خودتان انجام می‌شود و عددی به سرور ما ارسال نمی‌شود.</p>
+        <p style="margin-top:10px">مشتریات نرم‌افزار CRM فارسی برای پیگیری مشتری، پایپ‌لاین فروش و تقسیم لید بین کارشناس‌هاست. <a href="/product">آشنایی با مشتریات</a></p>
+      </div>
+      <div>
+        <h2>ابزارها</h2>
+        <ul><li><a href="/tools/ras-cheque">محاسبه رأس چک</a></li><li><a href="/tools/proforma-invoice">پیش‌فاکتور آنلاین</a></li><li><a href="/tools/installment">محاسبه فروش اقساطی</a></li><li><a href="/tools/discount">محاسبه درصد تخفیف</a></li><li><a href="/tools/vat">محاسبه ارزش افزوده</a></li><li><a href="/tools/markup-margin">قیمت تمام‌شده و درصد سود</a></li><li><a href="/tools/break-even">محاسبه نقطه سر به سر</a></li></ul>
+      </div>
+      <div>
+        <h2>مشتریات</h2>
+        <ul>
+          <li><a href="/what-is-crm">CRM چیست؟</a></li>
+          <li><a href="/product">معرفی محصول</a></li>
+          <li><a href="/pricing">تعرفه</a></li>
+          <li><a href="/demo">دموی بدون ثبت‌نام</a></li>
+          <li><a href="/blog">وبلاگ</a></li>
+          <li><a href="/contact">تماس با ما</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-bottom"><span>© ۱۴۰۵ مشتریات. همهٔ حقوق محفوظ است.</span><span>نتیجهٔ ابزارها برای برآورد است؛ برای تصمیم مالی یا مالیاتی رسمی با مشاور خود تطبیق دهید.</span></div>
+  </div>
+</footer>
+<div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

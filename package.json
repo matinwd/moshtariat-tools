@@ -1,0 +1,17 @@
+{
+  "name": "moshtariat-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ابزارهای رایگان محاسبات فروش مشتریات — moshtariat.ir/tools",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test",
+    "serve": "node scripts/serve.js",
+    "check": "npm test && npm run build && node scripts/check-dist.js"
+  },
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,23 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+      - name: Build (reproducible — date pinned to commit time)
+        run: SOURCE_DATE_EPOCH=$(git log -1 --format=%ct) npm run build
+      - run: node scripts/check-dist.js
+      - name: committed dist/ must match the build output
+        run: git diff --exit-code -- dist/
+      - name: Docker build
+        run: docker build --build-arg GIT_SHA=${{ github.sha }} --build-arg BUILD_DATE=${{ github.run_created_at }} .

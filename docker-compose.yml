@@ -17,7 +17,7 @@ services:
       - /run
       - /tmp
       - /var/tmp
-      - /var/lib/nginx/tmp
+      - /var/lib/nginx
       - /var/cache/nginx
     networks:
       edge:

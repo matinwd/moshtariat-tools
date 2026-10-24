@@ -39,7 +39,6 @@ export function pageHead({ h1, lede }) {
   return `<header class="page-head">
   <h1>${h1}</h1>
   <p class="lede">${lede}</p>
-  <div class="badges"><span class="badge">${icon('check')}رایگان و بدون ثبت‌نام</span><span class="badge">${icon('check')}نتیجه هم‌زمان با تایپ</span><span class="badge">${icon('check')}لینک قابل ارسال</span></div>
 </header>`;
 }
 

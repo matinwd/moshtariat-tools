@@ -16,7 +16,6 @@ export function hubPage() {
   const body = `<header class="page-head">
   <h1>ابزارهای رایگان محاسبات فروش</h1>
   <p class="lede">رأس چک، پیش‌فاکتور، اقساط، تخفیف، ارزش افزوده، قیمت تمام‌شده و نقطهٔ سر به سر؛ حساب‌وکتاب‌هایی که هر روز در فروش تکرار می‌شوند، با یک صفحه و بدون اکسل.</p>
-  <div class="badges"><span class="badge">${icon('check')}بدون ثبت‌نام</span><span class="badge">${icon('check')}تاریخ شمسی</span><span class="badge">${icon('check')}اطلاعات از مرورگر شما خارج نمی‌شود</span></div>
 </header>
 ${groups}
 ${faqSection(faq)}

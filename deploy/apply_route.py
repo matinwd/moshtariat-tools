@@ -30,7 +30,8 @@ def install(conf_path, block_path):
     conf = read(conf_path)
     if 'moshtariat-tools route' in conf:
         fail('route already installed')
-    m = re.search(r'^\s*server_name\b[^\n]*moshtariat\.ir[^\n]*$', conf, re.M)
+    # Must match the bare domain, not subdomains like app.moshtariat.ir.
+    m = re.search(r'^\s*server_name\b[^\n;]*(?<![\w.])moshtariat\.ir', conf, re.M)
     if not m:
         fail('server block for moshtariat.ir not found')
     rest = conf[m.end():]

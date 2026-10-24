@@ -16,7 +16,7 @@ source "$ENV_FILE"
 : "${SSH_HOST:?}" "${DOCKER_BIN:?}" "${TOOLS_EDGE_NETWORK:?}" "${PROXY_CONTAINER:?}" "${PROXY_CONF:?}"
 TAG="${TOOLS_TAG:-$(git rev-parse --short HEAD)}"
 REMOTE_DIR="${REMOTE_DIR:-~/moshtariat-tools}"
-DOCKER="env DOCKER_HOST=unix:///run/user/\$(id -u)/moshtariat-docker.sock $DOCKER_BIN"
+DOCKER="export DOCKER_HOST=unix:///run/user/\$(id -u)/moshtariat-docker.sock; $DOCKER_BIN"
 
 remote() { ssh "$SSH_HOST" "$@"; }
 
